@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+const path = require("path");
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -20,11 +22,26 @@ export default {
     },
     extend: {
       backgroundImage: {
-        sidebarDesktop: "url('./src/assets/images/bg-sidebar-desktop.svg')",
-        sidebarMobile: "url('./src/assets/images/bg-sidebar-mobile.svg')",
-        arcade: "url('./src/assets/images/icon-arcade.svg')",
-        advance: "url('./src/assets/images/icon-advanced.svg')",
-        pro: "url('./src/assets/images/icon-pro.svg')"
+        sidebarDesktop: `url('${path.resolve(
+          __dirname,
+          "src/assets/images/bg-sidebar-desktop.svg"
+        )}')`,
+        sidebarMobile: `url('${path.resolve(
+          __dirname,
+          "src/assets/images/bg-sidebar-mobile.svg"
+        )}')`,
+        arcade: `url('${path.resolve(
+          __dirname,
+          "src/assets/images/icon-arcade.svg"
+        )}')`,
+        advance: `url('${path.resolve(
+          __dirname,
+          "src/assets/images/icon-advanced.svg"
+        )}')`,
+        pro: `url('${path.resolve(
+          __dirname,
+          "src/assets/images/icon-pro.svg"
+        )}')`
       },
 
       colors: {
