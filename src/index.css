@@ -1,13 +1,4 @@
+@import "daisyui/dist/full.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "daisyui/dist/full.css";
-
-@layer base {
-  /* body {
-    @apply font-custom w-screen h-screen flex justify-center items-center;
-  }
-  .bg-sidebar-background {
-    background-image: url("../assets/images/bg-sidebar-desktop.svg");
-  } */
-}
