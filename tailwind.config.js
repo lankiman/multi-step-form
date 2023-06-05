@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import bgSidebar from "src/assets/images/bg-sidebar-mobile.svg";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -19,7 +21,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        sidebarDesktop: "url('src/assets/images/bg-sidebar-desktop.svg')",
+        sidebarDesktop: { bgSidebar },
         sidebarMobile: "url('src/assets/images/bg-sidebar-mobile.svg')",
         arcade: "url('src/assets/images/icon-arcade.svg')",
         advance: "url('src/assets/images/icon-advanced.svg')",
