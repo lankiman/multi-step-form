@@ -43,7 +43,11 @@ export default {
           "src/assets/images/icon-pro.svg"
         )}')`
       },
-
+      variants: {
+        extend: {
+          height: ["landscape"]
+        }
+      },
       colors: {
         MarineBlue: "hsl(213, 96%, 18%)",
         PurplishBlue: "hsl(243, 100%, 62%)",

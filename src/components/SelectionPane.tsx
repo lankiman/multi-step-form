@@ -244,11 +244,11 @@ const SelectionPane = ({ onFormStepChange }: Props) => {
   const currentRender = formSteps[currentStep].component;
 
   return (
-    <div className="h-full flex flex-col justify-between md:bg-inherit md:p-4 md:w-[55%] lg:ml-[-1%]">
+    <div className="h-full flex flex-col justify-between landscape:p-0 md:bg-inherit md:p-4 md:w-[55%] lg:ml-[-1%]">
       <div
-        className={`text-black h-fit relative top-[-30%] rounded-2xl w-[90%] mx-auto sm:top-0 sm:mt-[-20%] bg-Alabaster md:mt-0 md:bg-inherit md:p-4  md:h-full md:w-full lg:ml-[-1%] ${currentStep ===
+        className={`text-black h-fit relative top-[-30%] bg-Alabaster rounded-2xl w-[90%] mx-auto sm:top-0 sm:mt-[-20%] md:mt-0 md:bg-inherit md:p-4  md:h-full md:w-full lg:ml-[-1%] ${currentStep ===
         4
-          ? "h-[70%]"
+          ? "h-full"
           : ""}`}
       >
         {currentRender}
